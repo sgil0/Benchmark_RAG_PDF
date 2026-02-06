@@ -1,0 +1,729 @@
+[
+  {
+    "id": "Q1",
+    "type": "boolean",
+    "query_points": 2,
+    "query": "Le couple de serrage des boulons et écrous de roue d'un Porsche Cayenne de 2007 est-il de 160Nm ?",
+    "expected_answer": "Oui"
+  },
+  {
+    "id": "Q2",
+    "type": "boolean",
+    "query_points": 2,
+    "query": "Sur les Porsche 911 GT3, le réservoir de liquide hydraulique est situé sur le toit.",
+    "expected_answer": "Faux, il se situe dans le compartiment moteur."
+  },
+  {
+    "id": "Q3",
+    "type": "boolean",
+    "query_points": 2,
+    "query": "Le 74HC86 contient-il des portes XOR ?",
+    "expected_answer": "Oui"
+  },
+  {
+    "id": "Q4",
+    "type": "boolean",
+    "query_points": 2,
+    "query": "Le C7217 a-t-il une broche Reset permettant de réinitialiser l'affichage lorqu'elle est à 5V ?",
+    "expected_answer": "Oui."
+  },
+  {
+    "id": "Q5",
+    "type": "boolean",
+    "query_points": 2,
+    "query": "Le Prompt Chaining vise-t-il à réduire la latence ?",
+    "expected_answer": "Non, il augmente la latence car il implique plusieurs appels séquentiels."
+  },
+  {
+    "id": "Q6",
+    "type": "boolean",
+    "query_points": 2,
+    "query": "Faut-il séparer les œufs pour le Fondant au chocolat ?",
+    "expected_answer": "Non, il faut les mélanger entiers avec le sucre."
+  },
+  {
+    "id": "Q7",
+    "type": "boolean",
+    "query_points": 2,
+    "query": "Dimarc a facturé 6000€ à Manon Logie pour une location de voiture en décembre 2023 ?",
+    "expected_answer": "Non, Dimarc a bien facturé 6000€ or ce n'était pas pour une location de voiture mais un Accompagnement Mensuel."
+  },
+  {
+    "id": "Q8",
+    "type": "boolean",
+    "query_points": 2,
+    "query": "Balthazar MUET fait de la conception UI/UX pour Dimarc ?",
+    "expected_answer": "Oui."
+  },
+  {
+    "id": "Q9",
+    "type": "boolean",
+    "query_points": 2,
+    "query": "Lisa Rozel n'a jamais collaboré avec \"Et Suzette\".",
+    "expected_answer": "La déclaration est fausse, Lisa Rozel a bel et bien collaboré avec \"Et Suzette\" en décembre 2023."
+  },
+  {
+    "id": "Q10",
+    "type": "boolean",
+    "query_points": 2,
+    "query": "Magdalena LECUITER est vendeuse chez \"Et Suzette\" ?",
+    "expected_answer": "Oui."
+  },
+  {
+    "id": "Q11",
+    "type": "boolean",
+    "query_points": 2,
+    "query": "Il y a trois objectifs compétitifs pour la sélection de modèles pour l'optimisation de SLM-MUX ?",
+    "expected_answer": "Non il y en a deux : Union Accuracy et Contradiction Penalty"
+  },
+  {
+    "id": "Q12",
+    "type": "boolean",
+    "query_points": 2,
+    "query": "Quentin Tournier travaille avec \"Et Suzette\" ?",
+    "expected_answer": "Non il travaille avec Dimarc."
+  },
+  {
+    "id": "Q13",
+    "type": "boolean",
+    "query_points": 2,
+    "query": "Le numéro de Siret de Dimarc est-il 797 812 189 000 16 ?",
+    "expected_answer": "Non, le vrai numéro de Siret de Dimarc c'est : 977 812 189 000 16"
+  },
+  {
+    "id": "Q14",
+    "type": "boolean",
+    "query_points": 2,
+    "query": "Le Porsche Cayenne S de 2007 a une puisance de 750hp ?",
+    "expected_answer": "Non, le Porsche Cayenne S de 2007 a une puisance de de 385hp"
+  },
+  {
+    "id": "Q15",
+    "type": "boolean",
+    "query_points": 2,
+    "query": "Pour faire un fodant au chocolat il faut 5 fraises.",
+    "expected_answer": "Non, il ne faut aucune fraise."
+  },
+  {
+    "id": "Q16",
+    "type": "attribute",
+    "query_points": 3,
+    "query": "Quelles sont les dimensions des pneus stantards arrières et avant préconisées pour une Porsche 911 Turbo Carrera de 1976 aux USA ?",
+    "expected_answer": "Front : 185/70 VR 15 (jantes 7 pouces) & Rear : 215/60 VR 15 (jantes 8 pouces)."
+  },
+  {
+    "id": "Q17",
+    "type": "attribute",
+    "query_points": 3,
+    "query": "Combien de rapports de vitesse la Porsche Turbo Carrera de 1978 a-t-elle ?",
+    "expected_answer": "4"
+  },
+  {
+    "id": "Q18",
+    "type": "attribute",
+    "query_points": 3,
+    "query": "Quelle est la capacité du réservoir de carburant (en litres) du 718 Cayman GT4 RS 2023 ?",
+    "expected_answer": "64 litres"
+  },
+  {
+    "id": "Q19",
+    "type": "attribute",
+    "query_points": 3,
+    "query": "Quelle est la plage de tension d'alimentation (Vcc) recommandée pour le 74HC123 ?",
+    "expected_answer": "2.0 V à 6.0 V"
+  },
+  {
+    "id": "Q20",
+    "type": "attribute",
+    "query_points": 3,
+    "query": "Quel est le courant de sortie maximum (Io) par broche pour le 74HC86 ?",
+    "expected_answer": "± 25 mA (Absolute Max)"
+  },
+  {
+    "id": "Q21",
+    "type": "attribute",
+    "query_points": 3,
+    "query": "Quels sont les 4 types de mécanismes de routage de prompts ?",
+    "expected_answer": "LLM-based Routing, Embedding-based Routing, Rule-based Routing, Machine Learning Model-Based Routing"
+  },
+  {
+    "id": "Q22",
+    "type": "attribute",
+    "query_points": 3,
+    "query": "Quelle est la température de cuisson exacte pour un fondant au chocolat ?",
+    "expected_answer": "220°C"
+  },
+  {
+    "id": "Q23",
+    "type": "attribute",
+    "query_points": 3,
+    "query": "Au total, à combien s'élève la facture HT que Dimarc a payé pour l'abonnement Figma sur l'année 2025 ?",
+    "expected_answer": "690€"
+  },
+  {
+    "id": "Q24",
+    "type": "attribute",
+    "query_points": 3,
+    "query": "Combien a été payé Corentin Molle pour le mois de septembre 2025 ?",
+    "expected_answer": "2105.52€"
+  },
+  {
+    "id": "Q25",
+    "type": "attribute",
+    "query_points": 3,
+    "query": "Qui Bryan Fruchard cite-t-il au début de sa thèse ?",
+    "expected_answer": "Arthur Schopenhauer, Alan Turing et Euler."
+  },
+  {
+    "id": "Q26",
+    "type": "attribute",
+    "query_points": 3,
+    "query": "Quel est le montant TTC de la fatcture numéro \"F-2024-006\"",
+    "expected_answer": "4200€"
+  },
+  {
+    "id": "Q27",
+    "type": "attribute",
+    "query_points": 3,
+    "query": "Quel est le chiffre d'affaire de l'entreprise de Manon LOGIE sur l'année 2024-2025 ?",
+    "expected_answer": "1987683€"
+  },
+  {
+    "id": "Q28",
+    "type": "attribute",
+    "query_points": 3,
+    "query": "Quelle est la durée hebdomadaire de travail de Madame Morgane VERGONJEANNE ?",
+    "expected_answer": "35 heures."
+  },
+  {
+    "id": "Q29",
+    "type": "attribute",
+    "query_points": 3,
+    "query": "A hauteur de combien de clics l'entreprise \"Et Suzette\" a été facturé par Google en décembre 2023 ?",
+    "expected_answer": "31212 clics."
+  },
+  {
+    "id": "Q30",
+    "type": "attribute",
+    "query_points": 3,
+    "query": "Quelles sont les 3 métriques (en anglais) utilisées pour évaluer les performances d'un attaque d'empoisonnemnt d'un LLM ?",
+    "expected_answer": "Les trois métriques sont : Clean Accuracy (CA), Attack Success Rate (ASR) et Near-Trigger Accuracy (NTA)."
+  },
+  {
+    "id": "Q31",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Quelles sont les Porsche du dataset qui ont une puissance strictement inférieure à 400 hp ?",
+    "expected_answer": "911 Carrera (2020), 911 Carrera 4 (2020), 911 Targa 4 (2020), 944 Turbo, 944, Cayenne (2007), Cayenne S (2007), Boxster (2009), Boxster S (2009), Turbo Carrera (930)."
+  },
+  {
+    "id": "Q32",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Quels sont les restaurants qui sont des NOUVEAUX 2 ou 3 étoiles Michelin dans les guides 2024 et 2025 ?",
+    "expected_answer": "2024: Jordnær, RE-NAA, Kontrast, VYN. 2025: PAZ, Signum."
+  },
+  {
+    "id": "Q33",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Quels gâteaux au chocolat nécessitent un temps de cuisson strictement inférieur à 30 mins ?",
+    "expected_answer": "Fondant au chocolat"
+  },
+  {
+    "id": "Q34",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Quelles Porsche de la liste ne sont pas équipées d'un moteur 6 cylindres ?",
+    "expected_answer": "944 Turbo, 944, Cayenne, Cayenne S"
+  },
+  {
+    "id": "Q35",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Quels sont les montants de factures inférieur à 5€ ou $",
+    "expected_answer": "0.86€, 1.56€, 3€, 4.80€."
+  },
+  {
+    "id": "Q36",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Quel sont les dates de facturations / échéances datant d'après août 2025 ?",
+    "expected_answer": "10 oct. 2025, 01 oct. 2025, 15 sept. 2025, 19 sept. 2025, 30 sept. 2025"
+  },
+  {
+    "id": "Q37",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Quelles sont les Porsche avec une puissance supérieure à 500hp ?",
+    "expected_answer": "911 Turbo S 2020 (640hp) et 911 Turbo 2020 (572hp)."
+  },
+  {
+    "id": "Q38",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "D'après le Business plan de Manon Logie, en quelles années les échéances d'emprunts vont être inférieures à 17000€ ?",
+    "expected_answer": "2022/2023 (12861€) et 2024/2025 (16060€)"
+  },
+  {
+    "id": "Q39",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Quels sont les modèles open sources ayant obtenu un score strictement inférieur à 55% au Florishing AI Benchmark ?",
+    "expected_answer": "Qwen 2 VL 72B (51%), Llama 3.2 3B (45%), Llama 3.2 1B (44%)."
+  },
+  {
+    "id": "Q40",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Quels sont les modèles ayant obtenu un score supérieur ou égal à 60% au Florishing AI Benchmark ?",
+    "expected_answer": "Llama 3.3 70B (63%), DeepSeek-V3 (63%), DeepSeek-R1 (65%), o3-mini (61%), Gemini 1.5 Pro (61%), Grok 2 (62%), Gemini 2.0 Flash (64%), Claude 3.5 Sonnet (64%), Claude 3.7 Sonnet (65%), GPT-4.1 (65%), GPT-4.5 Preview (66%), GPT-o1 (66%), o4-mini (66%), Grok 3 (67%), Gemini 2.5 Flash (68%), o3 (72%)."
+  },
+  {
+    "id": "Q41",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "D'après Harvard, pour quels raisons chat GPT est-il utilisé dans + de 9% des cas au travail ?",
+    "expected_answer": "Prise de décision et solution de problèmes (Making decisions and solving problems), Obtenir / recueillir des informations (Getting Information), Interpréter / expliquer la signification des informations pour les autres (Interpreting the Meaning of Information for Others), Documenter / enregistrer des informations (Documenting/Recording Information), Penser de manière créative (Thinking Creatively), Travailler avec des ordinateurs (Working with computers)."
+  },
+  {
+    "id": "Q42",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Quelles Porsche datent de 2023 ?",
+    "expected_answer": "718 Cayman GT4 RS 2023 et 718 Spyder RS 2023."
+  },
+  {
+    "id": "Q43",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Quels sont les montants HT de factures supérieurs à 69€ qui concernent Google ?",
+    "expected_answer": "101.39€, 74.06€, 5138.18€"
+  },
+  {
+    "id": "Q44",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Qui concerne les factures égale à 4500€ ?",
+    "expected_answer": "Baltazar Muet."
+  },
+  {
+    "id": "Q45",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Quels sont les modèles ayant obtenu un score supérieur ou égal à 60% au Florishing AI Benchmark sans compter Open AI?",
+    "expected_answer": "Llama 3.3 70B (63%), DeepSeek-V3 (63%), DeepSeek-R1 (65%), Gemini 1.5 Pro (61%), Grok 2 (62%), Gemini 2.0 Flash (64%), Claude 3.5 Sonnet (64%), Claude 3.7 Sonnet (65%), Grok 3 (67%), Gemini 2.5 Flash (68%)."
+  },
+  {
+    "id": "Q46",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Quels sont les numéros des factures avec un montant supérieur à 3000€ au cours de l'année 2016 pour Dimarc ?",
+    "expected_answer": "Impossible de répondre, aucun document ne mentionne des factures datant de 2016 pour Dimarc."
+  },
+  {
+    "id": "Q47",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Quels sont les modèles qui ont un score global supérieur à 60% mais un score en \"Health\" inférieur ou égal à 20% ?",
+    "expected_answer": "Gemini 2.0 Flash, Gemini 1.5 Pro, o1, Grok 2."
+  },
+  {
+    "id": "Q48",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "En automatisme, quelle liaison série permet une distance de plus de 1km tout en proposant plus de 10 récepeteurs ?",
+    "expected_answer": "La liaison RS485V11/X27."
+  },
+  {
+    "id": "Q49",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Selon Google, quelle est la seule configuration qui atteint un score HLE-Search supérieur à 35 % avec une latence inférieure à 1000 secondes ?",
+    "expected_answer": "La configuration Test-Time Diffusion with Retrieval"
+  },
+  {
+    "id": "Q50",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Selon Stanford, quelles sont les tâches dont la volonté des humains de les automatiser est inférieure à 1.60 ?",
+    "expected_answer": "1. Reservation and Transportation Ticket Agents and Travel Clerks: Trace lost, delayed, or misdirected baggage for customers. 2. Logistics Analysts: Contact potential vendors to determine material availability"
+  },
+  {
+    "id": "Q51",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Selon Stanford, quels domaine sont en Automation Red Light Zone à plus de 30% ?",
+    "expected_answer": "Management, Business and Financial Operations, Arts, Designs, and Media. Ne surtout pas citer Computer and Mathematical."
+  },
+  {
+    "id": "Q52",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "D'après SAP, quels modèles on un taux de Tool Call Accuracy and Failure Modes static (Acc) supérieur à 0.55 ?",
+    "expected_answer": "Llama-3.3-Nemotron-Super-49B (0.60), Llama-3.3-Nemotron-DiaFORGE-49B (0.82), Gemma-3-DiaFORGE-12B (0.68), Gemma-3-DiaFORGE-27B (0.77), GPT-4o-20241120-fc (0.61)."
+  },
+  {
+    "id": "Q53",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Quelle est la première ligne de Pseudo-Code (surtout pas un commentaire) de la classe CognitionIPSEL",
+    "expected_answer": "Class CognitionIPSEL {"
+  },
+  {
+    "id": "Q54",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Dans le chapitre 17 : Reasoning technique, quels sont les 3 premiers use cases donnés ?",
+    "expected_answer": "Complex Question Answering (Réponse à des questions complexes), Mathematical Problem Solving (Résolution de problèmes mathématiques), Code Debugging and Generation (Génération et débogage de code)"
+  },
+  {
+    "id": "Q55",
+    "type": "constraint",
+    "query_points": 5,
+    "query": "Dans le chapitre 20 ; Prioritization, quels sont les 3 derniers use cases donnés ?",
+    "expected_answer": "Project Management, Cybersecurity, Personal Assistant AIs"
+  },
+  {
+    "id": "Q56",
+    "type": "ranking",
+    "query_points": 5,
+    "query": "D'après les documents, quelles sont les 5 Porsche les plus puissantes, classées de la plus puissante à la moins puissante ?",
+    "expected_answer": "1. 911 Turbo S 2020 (640hp), 2. 911 Turbo 2020 (572hp), 3. 718 Cayman GT4 RS 2023 (500 hp), 4. 718 Spyder RS 2023 (500hp), 5. 911 Carrera S / 4S (443hp)"
+  },
+  {
+    "id": "Q57",
+    "type": "ranking",
+    "query_points": 5,
+    "query": "Quelles sont les nouveaux restaurants étoilés (1,2 ou 3) Michelin 2025 triés par ordre alphabétique ?",
+    "expected_answer": "Alimentum, ergo, Gaptrast, HOZE, Omakase by Sergey Pak, Parsley Salon, PAZ, Pearl by Paul Proffitt, Signum, Sushi Anaba, texture, Udtryk."
+  },
+  {
+    "id": "Q58",
+    "type": "ranking",
+    "query_points": 5,
+    "query": "Quelles sont les différentes valeurs de résistances pour le C7217 triées par ordre décroissant ?",
+    "expected_answer": "1 Mohm, 50 kohm, 47 kohm, 1 kohm"
+  },
+  {
+    "id": "Q59",
+    "type": "ranking",
+    "query_points": 5,
+    "query": "Quels sont les montants de la TVA des 3 plus grosses facture de Google à Dimarc en 2025 dans l'ordre croissant ?",
+    "expected_answer": "13.80€, 14.81€, 20.28€"
+  },
+  {
+    "id": "Q60",
+    "type": "ranking",
+    "query_points": 5,
+    "query": "Quels sont les 3 plus petits montants de facture de Dimarc en 2025 dans l'odre décroissant ?",
+    "expected_answer": "3€, 1.56€, 0.86€"
+  },
+  {
+    "id": "Q61",
+    "type": "ranking",
+    "query_points": 5,
+    "query": "Quels sont les chiffres d'affaires de \"Et Suzette\" de 2022 à 2025 dans l'odre décroissants de CA ?",
+    "expected_answer": "2024/2025: 1987683€, 2023/2024: 1973003€, 2022/2023: 1110367€, 2021-2022: 382925€"
+  },
+  {
+    "id": "Q62",
+    "type": "ranking",
+    "query_points": 5,
+    "query": "Listez les 5  factures les plus récentes de l'année 2025 (spécifie la date) ?",
+    "expected_answer": "10 octobre 2025: Strattt, 2 factures le 01 oct. 2025 : Strattt et Baltazar MUET, 30 septembre 2025: Quentin Tournier, 19 septembre 2025: Figma"
+  },
+  {
+    "id": "Q63",
+    "type": "ranking",
+    "query_points": 5,
+    "query": "Quels sont les mots-clés caractérisant la méthode MASK dans l'ordre alphabétique ?",
+    "expected_answer": "Démarche, Diffusion et évolution, Livre de Connaissances, Modélisations des connaissances, Receuil de connaissances, Théorie."
+  },
+  {
+    "id": "Q64",
+    "type": "ranking",
+    "query_points": 5,
+    "query": "Classez les trois types d'entropie mentionnés par Benoit LEBLANC selon la dimension qu'ils mesurent, de la plus technique/mathématique à la plus sociale/organisationnelle.",
+    "expected_answer": "1. L'entropie de l'information (Shannon) : mesure la donnée brute. 2. L'entropie sémantique (Gurevich) : mesure la structure du sens (graphe sémantique). 3. L'entropie de contexte : mesure l'usage humain (réseau d'utilisateurs)."
+  },
+  {
+    "id": "Q65",
+    "type": "ranking",
+    "query_points": 5,
+    "query": "Citer les trois étapes (en anglais) de la \"Network dissection\" dans l'odre inverse à celui dans le texte.",
+    "expected_answer": "1. Quantify alignment of hidden variable-concept pairs. 2. Gather hidden variables’ response to known concepts. 3. Identify a broad set of human-labeled visual concepts."
+  },
+  {
+    "id": "Q66",
+    "type": "ranking",
+    "query_points": 5,
+    "query": "Classez les trois datasets suivants par ordre croissant de performance (MRR) obtenus par le modèle CONEX : YAGO3-10, WN18RR, FB15K-237",
+    "expected_answer": "1.FB15K-237 (0.366), 2. WN18RR (0.481), 3. YAGO3-10 (0.553)."
+  },
+  {
+    "id": "Q67",
+    "type": "ranking",
+    "query_points": 5,
+    "query": "Classer la répartition de l'usage des compétences de Claude de la moins utilisée à la plus utilisée.",
+    "expected_answer": "1.Installation. 2.Gestion du temps (Time management). 3.Dépannage / Résolution de problèmes (Troubleshooting). 4.Programmation (Programming). 5.Rédaction (Writing). 6.Pensée critique (Critical Thinking)."
+  },
+  {
+    "id": "Q68",
+    "type": "ranking",
+    "query_points": 5,
+    "query": "Classez les quatre zones du \"WORKBank\" de celle où l'automatisation est la plus souhaitée/possible à celle où elle est la plus risquée/rejetée.",
+    "expected_answer": "1. Automation \"Green Light\", 2. R&D Opportunity, 3. Low Priority, 4. Automation \"Red Light\"."
+  },
+  {
+    "id": "Q69",
+    "type": "ranking",
+    "query_points": 5,
+    "query": "Classez les stratégies de recherche par ordre de complexité : Standard MCTS, Sequential Refinement, Repeated Sampling, Adaptive Branching MCTS.",
+    "expected_answer": "1.Sequential Refinement. 2.Repeated Sampling. 3.Standard MCTS. 4.Adaptive Branching MCTS."
+  },
+  {
+    "id": "Q70",
+    "type": "ranking",
+    "query_points": 5,
+    "query": "Quels sont les 10 modèles les plus performants au FAI Benchmark du moins performant au plus performant.",
+    "expected_answer": "Claude 3.5 Sonnet, Claude 3.7 Sonnet, DeepSeek-R1, GPT-4.1, GPT-4.5-preview, GPT-o1, o4-mini, Grok 3, Gemini 2.5 Flash Thinking, o3."
+  },
+  {
+    "id": "Q71",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Quelle est la cylindrée de la Porsche la plus récente du dataset ?",
+    "expected_answer": "3.996 cm³ (718 Cayman GT4 RS / Spyder RS de 2023)"
+  },
+  {
+    "id": "Q72",
+    "type": "multi-hop",
+    "query_points": 10,
+    "critical": true,
+    "query": "Le composant 74HC123 peut-il être alimenté directement par la prise allume-cigare du Porsche Cayenne 2007 ?",
+    "expected_answer": "Non. Prise Cayenne = 12V. Max absolu 74HC123 = 7V. Le composant grillerait.",
+    "safety_note": "Doit explicitement dire NON et mentionner le risque de surtension."
+  },
+  {
+    "id": "Q73",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Le restaurant 'The ROOM' a-t-il obtenu plus d'étoiles dans le guide 2024 qu'il ne faut d'œufs pour le Fondant au chocolat ?",
+    "expected_answer": "Non. The ROOM = 1 étoile. Recette = 3 œufs. Donc 1 < 3."
+  },
+  {
+    "id": "Q74",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Combien de rapports de vitesse le Porsche Cayenne S 2007 en boite manuelle a-t-il de plus que la 911 Turbo de 1989 ?",
+    "expected_answer": "1 rapport de plus (6 pour le Cayenne S vs 5 pour la 911 Turbo 1989)."
+  },
+  {
+    "id": "Q75",
+    "type": "multi-hop",
+    "query_points": 10,
+    "critical": true,
+    "query": "Si je cuis mon fondant au chocolat à la température maximale de stockage du 74HC86, le gâteau sera-t-il assez cuit ?",
+    "expected_answer": "Non, pas assez cuit. Stockage max 74HC86 = 150°C. Cuisson requise = 220°C.",
+    "safety_note": "Ne doit pas valider 150°C comme température de cuisson."
+  },
+  {
+    "id": "Q76",
+    "type": "multi-hop",
+    "query_points": 10,
+    "critical": true,
+    "query": "La clé dynamométrique de la 911 Turbo (1989) suffit-elle pour l'écrou central de la 718 Cayman GT4 RS ?",
+    "expected_answer": "Non. 911 Turbo = ~130 Nm. GT4 RS Center Lock = ~600 Nm. Clé insuffisante.",
+    "safety_note": "Alerte de sécurité obligatoire sur la différence de couple."
+  },
+  {
+    "id": "Q77",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Calcule la différence entre le nombre de restaurants étoilés à Copenhague (2025) et à Oslo (2024).",
+    "expected_answer": "3 étoilés à Copenhague (2025) - 3 étoilés à Oslo (2024) = Différence de 0."
+  },
+  {
+    "id": "Q78",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Quel abonnement a coûté le plus cher en euros (sachant que 1€ = 1.18$) à Dimarc en 2025 parmis : Github, Google, Figma.",
+    "expected_answer": "Figma: 828€. Github: 563.23$ soit environ 477,3€. Google: 458.94€. Donc c'est l'abonnement à Figma qui a coûté plus cher à Dimarc en 2025."
+  },
+  {
+    "id": "Q79",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Le coût de l'abonnement à Figma en 2025 pour Dimarc additionné au montant de la facture numéro \"4887659122\" permet-il de payer la totalité des employers de \"Et Suzette\" au cours de l'année 2022/2023 ?",
+    "expected_answer": "Montant facture numéro \"4887659122\": 5138.18€. Montant abonnement Figma: 828€. Rémunération annuelle du personnel de \"Et Suzette\" en 2022/2023: 80418€. 80418-5138.18+828 = 74451,82€. Donc non car il manque encore environ 74451,82€ à payer"
+  },
+  {
+    "id": "Q80",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Quel est le montant total hors taxes facturé par le prestataire STRATTT au cours du deuxieme trimestre 2025 pour l'entreprise Dimarc (attention aux doublons) ?",
+    "expected_answer": "01/04/25:142€, 04/04/25:50€, 15/04/25:404.6€, 02/05/25:626.01€, 01/06/25:142€ soit un total de 1364.61€"
+  },
+  {
+    "id": "Q81",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Le taux de TVA appliqué sur la facture numéro 390596F6-0028 correspond-il au taux en vigueur pour ce type de service mentionné dans la code général des impôts ?",
+    "expected_answer": "Oui, la TVA psécifiée est de 20% ce qui correspond."
+  },
+  {
+    "id": "Q82",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Expliquer pourquoi les factures de Baltazar Muet à Dimrac n'ont pas de TVA applicable ?",
+    "expected_answer": "Les factures de Balthazar Muet à DIMARC n'ont pas de TVA applicable en raison de l'article 293 B du Code général des impôts (CGI)."
+  },
+  {
+    "id": "Q83",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Combien de fois le prestataire STRATTT a-t-il a facturé Dimarc en 2025, et quel est le coût moyen HT de cette dépense  ?",
+    "expected_answer": "En 2025, le prestataire STRATTT a facturé 14 fois Dimarc au total. Le coût moyen par facture s'élève à 168.19€ HT."
+  },
+  {
+    "id": "Q84",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Le prestataire STRATTT a-t-il changé de domiciliation bancaire (IBAN) ou d'adresse postale entre la première facture de l'année 2025 (Janvier) et la dernière reçue (Octobre) ?",
+    "expected_answer": "Non, les coordonnées bancaires (IBAN finissant par 2474) et l'adresse postale sont restées identiques tout au long de la période."
+  },
+  {
+    "id": "Q85",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Quels sont les mois entre janvier et octobre 2025 pour lesquels aucune facture d'honoraires mensuels auprès du prestataire STRATTT \"classiques\" (142 € ou 122 €) n'a été fournie ?",
+    "expected_answer": "Il manque les factures d'honoraires mensuels pour les mois d'Avril, Mai, Août et Septembre 2025.\" (Note : En mai, il y a une facture \"Exceptionnelle\" mais pas la facture récurrente classique dans ce dataset)"
+  },
+  {
+    "id": "Q86",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Entre la 911 GT3 et le Cayenne S Tiptronic S, laquelle possède le meilleur rapport poids/puissance (kg/ch) (prendre les valeur minimal de poids) ?",
+    "expected_answer": "911 GT3 : 1395 kg pour 435ch soit un rapport d'environ 3.2 kg/ch. Cayenne S Tiptronic S : 2245kg pour 385ch soit un rapport d'environ 5.83 kg/ch. Ainsi c'est la 911 gt3 qui a un meilleur rapport poids/puissance avec 3.2 kg/ch."
+  },
+  {
+    "id": "Q87",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Quelle est la différence de longueur maximale en cm entre la 718 Spyder RS et la 911 Turbo S",
+    "expected_answer": "La 718 Spyder RS mesure 441,8 cm de long contre 453,5 cm pour la 911 Turbo S. Soit une différence de 11,7 cm."
+  },
+  {
+    "id": "Q88",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "En septembre 2025, quelle est la différence de salaire brut entre Bryan Fruchart et Corentin Molle. Qui a gangné le plus et à hauteur de combien ?",
+    "expected_answer": "En sepetembre 2025, le salaire brut perçu par Corentin Molle s'élève à 2380€ contre 2260€ pour Bryan Fruchart. Soit une différence de 120€. Donc Corentin Molle a gagné 120€ de plus que Bryan Fruchart en septembre 2025."
+  },
+  {
+    "id": "Q89",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "En septembre 2025, quelle est la différence de salaire net payé entre Bryan Fruchart, Corentin Molle et Jean Cossart. Qui a gangné le plus et à hauteur de combien comparé au minimum ?",
+    "expected_answer": "En sepetembre 2025, le salaire net payé perçu par Corentin Molle s'élève à 2105.52€ contre 2104.41€ pour Bryan Fruchart et 2101.08€ pour Jean Cossart. Soit une différence de 4.44€ entre le salaire net payé maximum et le minimum. Donc Corentin Molle a gagné 4.44€ de plus que Jean Cossart en septembre 2025."
+  },
+  {
+    "id": "Q90",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Quels sont les temps en secondes pour effectuer un 0-100 km/h parmis les Porsche 944, 944 turbo, Turbo Carrera, Boxter ( boite PDK en sport+ ) et Boxter S ( boite PDK en sport+ ). Quelles sont les puissances des 3 plus rapides ?",
+    "expected_answer": "Turbo carrera : 5.7s, 944 turbo : 6.3s, 944 : 7.9s, Boxter : 5.6s, Boxter S : 5.0s.  Les trois plus rapides sont : 1.Boxter S en 5s avec 310ch. 2.Boxter en 5.6s avec 255ch. 3.Turbo carrera en 5.7s avec 234ch. "
+  },
+  {
+    "id": "Q91",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Quel est l'écart, en euros, entre le taux horaire brut fixé lors de l'embauche de Magdalena Lecutier et celui appliqué sur son bulletin de salaire de novembre 2022 ?",
+    "expected_answer": "Taux horaire à l'embauche fixé 10,25 € contre 11.07€ sur la fiche de paie de novembre 2022. Soit une différence de 11.07 - 10.25 = 0.82€"
+  },
+  {
+    "id": "Q92",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "En vous basant sur la liste du personnel présente dans les fiches de paie de novembre 2022 et sur la nature du document reçu en janvier 2024, Lisa Rozel est-elle une salariée de l'entreprise ou une prestataire externe ?",
+    "expected_answer": "Elle est une prestataire externe."
+  },
+  {
+    "id": "Q93",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Le montant mensuel facturé par l'agence OMOSA début 2024 correspond-il à la moyenne mensuelle budgétisée pour l'année 2023-2024 dans le Business Plan pour le poste \"Agence Marketing\" ?",
+    "expected_answer": "Non, il est bien inférieur. OMOSA facture 3 500 € HT/mois, alors que le Business Plan prévoyait une moyenne de 16 000 €/mois (192 000 € / 12)."
+  },
+  {
+    "id": "Q94",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Qui est la gérante de l'entreprise EtSuzette ?",
+    "expected_answer": "Manon Logie."
+  },
+  {
+    "id": "Q95",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Le Business Plan prévoyait une \"Apprentie\" pour l'exercice 2022-2023. Quel est le nom de la salariée qui occupe ce poste ?",
+    "expected_answer": "La salariée qui occupe ce poste est Louise Cortequisse."
+  },
+  {
+    "id": "Q96",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Le Business Plan distingue les loyers de deux villes. Dans quelle ville se situe le siège social mentionné sur la facture Google Ads de décembre 2023, et quel est le loyer annuel prévu pour cette ville spécifique en 2023-2024 ainsi que les charges locatives?",
+    "expected_answer": "La ville est Armentières, le loyer annuel prévu est de 3 561 € et les charges locatives sont de 300 €."
+  },
+  {
+    "id": "Q97",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "La date d'entrée indiquée sur le bulletin de salaire de Chloé Verkruyssen de novembre 2022 est-elle antérieure ou postérieure à la date de signature du contrat de Magdalena Lecutier ?",
+    "expected_answer": "La date d'entrée de Chloé Verkruyssen est postérieure à la date de signature du contrat de Magdalena Lecutier."
+  },
+  {
+    "id": "Q98",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "D'après les bulletins de salaire de novembre 2022, l'apprentie Louise Cortequisse et la vendeuse Maureen Grimopont travaillent-elle dans le même établissement géographiquement parlant ?",
+    "expected_answer": "Non, Louise travaille à Dunkerque tandis que Maureen travaille à Armentières."
+  },
+  {
+    "id": "Q99",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "En septembre 2025, l'entreprise DIMARC dépense-t-elle plus pour payer les factures de ses deux freelances (Quentin et Balthazar) ou pour rémunérer l'ensemble de ses trois dirigeants associés (Jean, Bryan et Corentin) charges patronales incluses ?",
+    "expected_answer": "Jean : 2934.93€, Bryan : 2870.56€, Corentin : 3338.41€. Total dirigeants = 9143.9€. Quentin : 11880€, Balthazar : 4 500€. Total freelances = 16380€. Donc DIMARC dépense plus pour payer les factures de ses deux freelances (16380€) que pour rémunérer l'ensemble de ses trois dirigeants associés (9143.9€)."
+  },
+  {
+    "id": "Q100",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Au mois de mai 2025, DIMARC a-t-elle dépensé plus d'argent pour ses outils technologiques (GitHub, Figma, Anthropic, Mistral et Google Cloud) ou pour gérer ses difficultés juridiques avec le cabinet STRATTT ?",
+    "expected_answer": "Elle a dépensé plus pour le juridique (751.21 € TTC) que pour la tech (environ 109.61€ €)."
+  },
+  {
+    "id": "Q101",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Quels sont les numéro de factures d'un montant inférieur à 5€ ou $",
+    "expected_answer": "MSTRL-API-97715-012 (0.86€), MSTRL-API-97715-015 (1.56€), MSTRL-API-97715-016 (3€), MSTRL-API-97715-013 (4.80€)."
+  },
+  {
+  "id": "Q102",
+  "type": "multi-hop",
+  "query_points": 10,
+  "query": "Quel sont les numéros de factures datant d'après août 2025 ?",
+  "expected_answer": "F-2025-10-22049 (10 oct. 2025), F-2025-09-21271 (15 sept. 2025), 390596F6-0030 (19 sept. 2025), 20 (30 sept. 2025), F-2025-10-21491 (01 oct. 2025), Baltazar MUET pas de numéro de facture (01 oct. 2025)"
+  },
+  {
+    "id": "Q103",
+    "type": "multi-hop",
+    "query_points": 10,
+    "query": "Quels sont les numéros de factures qui concernent Google avec montant HT supérieur à 69€ ?",
+    "expected_answer": "GCFRD0008205953 (101.39€), GCFRD0009430797 (74.06€), 4887659122 (5138.18€)"
+  }
+]
