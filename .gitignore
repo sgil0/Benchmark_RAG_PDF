@@ -1,5 +1,3 @@
 .env
-*.json          # Pour bloquer cle-auth-vortexAI.json s'il traîne
 __pycache__/
-*_output/       # Pour ne pas envoyer tes résultats CSV/JSON intermédiaires sur le repo
 .DS_Store
